@@ -26,7 +26,7 @@ FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 
 # Copiamos el JAR generado en la etapa anterior
-COPY --from=builder /app/target/eureka-server-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=builder /app/target/*.jar app.jar
 
 # Exponemos el puerto configurado en application.properties
 EXPOSE 8761
