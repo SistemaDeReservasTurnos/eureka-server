@@ -2,10 +2,10 @@ apiVersion: v1
 kind: Service
 metadata:
   namespace: StudioBarber
-  name: eureka-server
+  name: eureka-service
 spec:
   selector:
-    app: eureka-server
+    app: reservas-eureka-server
   ports:
     - protocol: TCP #http
       port: 80
