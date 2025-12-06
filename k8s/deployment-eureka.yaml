@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: deploy-eureka
-  namespace: StudioBarber
+  namespace: studio-barber
   labels:
     app: reservas-eureka-server
 spec:
